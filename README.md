@@ -1,7 +1,7 @@
 # Windows_WSL_Debian_Wordpress_MariaDB
 
 A setup script with breakdown to install Wordpress CMS with MariaDB on Debian 10 'Buster' and Ubuntu 18.04 'Bionic'. 
-I wrote and tested it to be a minimal **"just what you need"** development environment on the [Userland App](https://github.com/CypherpunkArmory/UserLAnd) for Android to keep complexity low and the ability to successfully learn from it high.
+I wrote and tested it to be a minimal **"just what you need"** development environment for WSL.
 
 # Installing quickly with a script.
 
@@ -13,7 +13,7 @@ sudo apt upgrade -y &&
 sudo apt autoremove -y &&
 sudo apt install wget -y &&
 wget https://raw.githubusercontent.com/brettjrea/Scripts_Fix/master/fixscripts.sh &&
-wget https://raw.githubusercontent.com/brettjrea/Android_Userland_Debian_Wordpress_MariaDB/master/setupwp.sh &&
+wget https://raw.githubusercontent.com/brettjrea/Windows_WSL_Debian_Wordpress_MariaDB/master/setupwp.sh &&
 bash fixscripts.sh &&
 bash setupwp.sh
 ```
