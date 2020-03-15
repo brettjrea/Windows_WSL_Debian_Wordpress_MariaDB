@@ -14,7 +14,7 @@ FLUSH PRIVILEGES;
 _EOF_
 ### Make WP directory.
 sudo mkdir /wp/
-sudo chmod- R 777 /wp/
+sudo chmod -R 777 /wp/
 ### Change into wp directory.
 cd /wp/
 ### Download WP-CLI.deb.
