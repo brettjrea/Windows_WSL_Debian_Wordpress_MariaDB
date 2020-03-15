@@ -86,6 +86,6 @@ wp config create --path=/wp/ --dbhost=localhost --dbname=wordpress --dbuser=dbus
 wp core install --path=/wp/ --url=http://localhost:8080/ --title=wordpress --admin_user=wpuser --admin_password=wppass --admin_email=info@example.com
 ```
 
-### Start PHP built-in webserver on port 3000.
+### Start PHP built-in webserver on port 8080.
 
 `wp server`
