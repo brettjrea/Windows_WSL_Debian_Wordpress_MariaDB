@@ -11,7 +11,6 @@ I wrote and tested it to be a minimal **"just what you need"** development envir
 sudo apt update -y && 
 sudo apt upgrade -y &&
 sudo apt autoremove -y &&
-sudo apt install wget -y &&
 wget https://raw.githubusercontent.com/brettjrea/Scripts_Fix/master/fixscripts.sh &&
 wget https://raw.githubusercontent.com/brettjrea/Windows_WSL_Debian_Wordpress_MariaDB/master/setupwp.sh &&
 bash fixscripts.sh &&
