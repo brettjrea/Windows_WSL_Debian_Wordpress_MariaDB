@@ -6,6 +6,8 @@ A setup script with breakdown to install Wordpress CMS with MariaDB on Debian 10
 I wrote and tested it to be a minimal **"just what you need"** development environment for WSL.
 </details>
 
+---
+
 # Installing quickly with a script.
 
 Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
@@ -17,6 +19,8 @@ bash setupwp.sh
 ```
 
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
+
+---
 
 # Install by doing what the script does snip by snip.
 
@@ -32,6 +36,7 @@ sudo apt autoremove -y
 
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
 
+---
 
 ### Install MariaDB and PHP.
 
@@ -42,6 +47,8 @@ sudo apt install mariadb-server php-cli php-curl php-gd php-intl php-mbstring ph
 ```
 
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
+
+---
 
 ### Start Mysql & Create User.
 
@@ -63,6 +70,8 @@ _EOF_
 
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
 
+---
+
 ### Make WP directory.
 
 Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
@@ -70,6 +79,8 @@ Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
 `sudo mkdir /wp/`
 
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
+
+---
 
 ### Change permissions.
 
@@ -79,6 +90,8 @@ Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
 
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
 
+---
+
 ### Change into WP directory.
 
 Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
@@ -86,6 +99,8 @@ Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
 `cd /wp/`
 
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
+
+---
 
 ### Download WP-CLI.deb.
 
@@ -99,6 +114,8 @@ sudo rm -f wpcli.deb
 
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
 
+---
+
 ### Update WP-CLI.
 
 Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
@@ -107,6 +124,8 @@ Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
 
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
 
+---
+
 ### Use WP-CLI to download wordpress to /wp.
 
 Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
@@ -114,6 +133,8 @@ Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
 `wp core download --path=/wp/`
 
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
+
+---
 
 ### Use WP-CLI to Create config.php
 
@@ -125,6 +146,7 @@ wp config create --path=/wp/ --dbhost=localhost --dbname=wordpress --dbuser=dbus
 
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
 
+---
 ### Use WP-CLI to create database.
 
 Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
@@ -132,6 +154,8 @@ Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
 `wp db create --path=/wp/`
 
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
+
+---
 
 ### Use WP-CLI to run install.
 
@@ -143,6 +167,8 @@ wp core install --path=/wp/ --url=http://localhost:8080/ --title=wordpress --adm
 
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
 
+---
+
 ### Start PHP built-in webserver on port 8080.
 
 Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
@@ -150,3 +176,4 @@ Copy the following with <kbd>CTRL</kbd>+<kbd>C</kbd>
 `wp server`
 and paste into Powershell with <kbd>Right Mouse Click</kbd> and press <kbd>Enter</kbd>
 
+---
